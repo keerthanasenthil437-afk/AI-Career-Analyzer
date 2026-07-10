@@ -1,11 +1,19 @@
 projects = {
 
     "AI Engineer": [
-        "Plant Disease Detection",
-        "Fake News Detection",
-        "Resume Screening",
         "Chatbot using LLM",
-        "Object Detection"
+        "Face Recognition System",
+        "AI Resume Analyzer",
+        "Image Caption Generator",
+        "Voice Assistant"
+    ],
+
+    "Data Scientist": [
+        "House Price Prediction",
+        "Customer Churn Prediction",
+        "Movie Recommendation System",
+        "Sales Forecasting",
+        "Credit Card Fraud Detection"
     ],
 
     "ML Engineer": [
@@ -16,37 +24,62 @@ projects = {
         "Sales Forecasting"
     ],
 
-    "Data Scientist": [
-        "Stock Market Analysis",
-        "Sales Dashboard",
-        "Customer Segmentation",
-        "Sentiment Analysis",
-        "Data Visualization Dashboard"
+    "Software Engineer": [
+        "Library Management System",
+        "Bank Management System",
+        "Student Management System",
+        "Hospital Management System",
+        "Online Voting System"
     ],
 
-    "Data Analyst": [
-        "Power BI Sales Dashboard",
-        "HR Analytics Dashboard",
-        "COVID Data Analysis",
-        "Netflix Data Analysis",
-        "E-commerce Dashboard"
+    "Full Stack Developer": [
+        "E-Commerce Website",
+        "Blog Website",
+        "Food Delivery App",
+        "Portfolio Website",
+        "Chat Application"
+    ],
+
+    "Frontend Developer": [
+        "Portfolio Website",
+        "Netflix Clone",
+        "Weather App",
+        "To-Do App",
+        "Landing Page"
+    ],
+
+    "Backend Developer": [
+        "REST API",
+        "Authentication System",
+        "Library Backend",
+        "Blog Backend",
+        "Inventory API"
+    ],
+
+    "Web Developer": [
+        "College Website",
+        "Restaurant Website",
+        "Portfolio Website",
+        "E-Commerce Website",
+        "Blog Website"
     ],
 
     "Cloud Engineer": [
-        "AWS Web Application Deployment",
-        "Dockerized Flask App",
-        "Kubernetes Cluster",
+        "AWS Deployment",
+        "Dockerized Web App",
         "CI/CD Pipeline",
-        "Cloud Monitoring Dashboard"
+        "Kubernetes Project",
+        "Cloud Monitoring System"
     ],
 
-    "Software Engineer": [
-        "Library Management System",
-        "Hospital Management System",
-        "Student Management System",
-        "Bank Management System",
-        "Online Quiz System"
+    "Data Analyst": [
+        "Sales Dashboard",
+        "COVID Data Analysis",
+        "IPL Data Analysis",
+        "HR Dashboard",
+        "Financial Dashboard"
     ]
+
 }
 
 def get_projects(career):

@@ -1,9 +1,15 @@
 certifications = {
 
     "AI Engineer": [
-        "IBM AI Engineering Professional Certificate",
-        "Google AI Essentials",
-        "AWS Machine Learning Specialty"
+        "DeepLearning.AI TensorFlow Developer",
+        "IBM AI Engineering",
+        "Google AI Essentials"
+    ],
+
+    "Data Scientist": [
+        "IBM Data Science Professional Certificate",
+        "Google Advanced Data Analytics",
+        "Machine Learning by Andrew Ng"
     ],
 
     "ML Engineer": [
@@ -12,23 +18,48 @@ certifications = {
         "AWS Machine Learning Specialty"
     ],
 
-    "Data Scientist": [
-        "IBM Data Science Professional Certificate",
-        "Google Data Analytics Certificate",
-        "Microsoft Azure Data Scientist Associate"
+    "Software Engineer": [
+        "CS50 by Harvard",
+        "Python for Everybody",
+        "Oracle Java Foundations"
+    ],
+
+    "Full Stack Developer": [
+        "Meta Full Stack Developer",
+        "The Complete Web Development Bootcamp",
+        "MongoDB Developer"
+    ],
+
+    "Frontend Developer": [
+        "Meta Front-End Developer",
+        "Responsive Web Design",
+        "JavaScript Algorithms"
+    ],
+
+    "Backend Developer": [
+        "Django for Everybody",
+        "REST API Development",
+        "NodeJS Certification"
+    ],
+
+    "Web Developer": [
+        "Responsive Web Design",
+        "PHP for Beginners",
+        "JavaScript Certification"
     ],
 
     "Cloud Engineer": [
-        "AWS Certified Solutions Architect",
-        "Microsoft Azure Administrator",
-        "Google Associate Cloud Engineer"
+        "AWS Cloud Practitioner",
+        "Microsoft Azure Fundamentals",
+        "Google Cloud Associate Engineer"
     ],
 
-    "Software Engineer": [
-        "Meta Back-End Developer",
-        "Oracle Java Certification",
-        "Microsoft Azure Developer Associate"
+    "Data Analyst": [
+        "Google Data Analytics",
+        "Microsoft Power BI",
+        "IBM Data Analyst"
     ]
+
 }
 
 def get_certifications(career):
