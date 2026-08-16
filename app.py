@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 from resume_parser import extract_resume_text
 from skill_extractor import extract_skills
@@ -128,6 +129,17 @@ if uploaded_file is not None:
         )
 
         st.progress(readiness/100)
+        # Resume Analysis Chart
+        st.subheader("📊 Resume Analysis")
+
+        chart_data = pd.DataFrame({
+            "Metric": ["Resume Score", "Career Readiness"],
+            "Percentage": [resume_score, readiness]
+        })
+
+        st.bar_chart(
+            chart_data.set_index("Metric")
+        )
     # Skill Gap Analysis
     required, missing = analyze_skill_gap(career, skills)
 

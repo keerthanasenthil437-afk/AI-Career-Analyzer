@@ -4,21 +4,58 @@ import random
 random.seed(42)
 
 # ----------------------------
-# Skills (40 features)
+# Skills (55 features)
 # ----------------------------
+
 skills = [
+    # Programming
     "Python", "Java", "C", "C++", "SQL",
+
+    # Web Development
     "HTML", "CSS", "JavaScript", "React", "NodeJS",
-    "PHP", "Bootstrap", "Machine Learning", "Deep Learning",
+    "PHP", "Bootstrap",
+
+    # Machine Learning / AI
+    "Machine Learning", "Deep Learning",
     "Artificial Intelligence", "TensorFlow", "PyTorch",
     "Scikit-learn", "Pandas", "NumPy",
-    "Matplotlib", "Seaborn", "Git", "GitHub",
-    "Docker", "Kubernetes", "AWS", "Azure",
-    "Linux", "Flask", "Django", "FastAPI",
-    "MongoDB", "MySQL", "Power BI", "Excel",
+    "Matplotlib", "Seaborn",
+
+    # Development / DevOps
+    "Git", "GitHub", "Docker", "Kubernetes",
+    "AWS", "Azure", "Linux",
+
+    # Backend
+    "Flask", "Django", "FastAPI",
+
+    # Databases
+    "MongoDB", "MySQL",
+
+    # Data
+    "Power BI", "Excel",
     "Data Analysis", "Data Visualization",
-    "Computer Vision", "NLP"
+
+    # AI Specializations
+    "Computer Vision", "NLP",
+
+    # Modern Generative AI
+    "LLM", "GPT", "Claude", "Gemini",
+    "Llama", "Mistral",
+    "LangChain", "LangGraph",
+    "RAG", "Pinecone",
+    "Chroma", "Weaviate",
+    "CrewAI", "Prompt Engineering"
+   
+    # Data Science / MLOps
+    "XGBoost",
+    "A/B Testing",
+    "Bayesian",
+    "Causal Inference",
+    "MLflow",
+    "Airflow",
+    "Feast"
 ]
+
 
 # ----------------------------
 # Career Profiles
@@ -26,97 +63,171 @@ skills = [
 
 career_profiles = {
 
-    "AI Engineer":[
-        "Python","SQL","Machine Learning","Deep Learning",
-        "Artificial Intelligence","TensorFlow","PyTorch",
-        "Scikit-learn","Pandas","NumPy",
-        "Git","Docker","Linux","Computer Vision","NLP"
+    "AI Engineer": [
+        "Python", "SQL",
+        "Machine Learning", "Deep Learning",
+        "Artificial Intelligence",
+        "TensorFlow", "PyTorch",
+        "Scikit-learn", "Pandas", "NumPy",
+        "LLM", "GPT", "Claude", "Gemini",
+        "Llama", "Mistral",
+        "LangChain", "LangGraph", "RAG",
+        "Pinecone", "Chroma", "Weaviate",
+        "CrewAI", "Prompt Engineering",
+        "Git", "Docker", "Linux",
+        "Computer Vision", "NLP"
     ],
 
-    "Data Scientist":[
-        "Python","SQL","Machine Learning","Pandas","NumPy",
-        "Matplotlib","Seaborn","Scikit-learn",
-        "Excel","Power BI","Data Analysis",
-        "Data Visualization","Git"
+    "Data Scientist": [
+    "Python",
+    "SQL",
+    "Machine Learning",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Scikit-learn",
+    "Excel",
+    "Power BI",
+    "Data Analysis",
+    "Data Visualization",
+    "XGBoost",
+    "A/B Testing",
+    "Bayesian",
+    "Causal Inference"
+   ],
+    "ML Engineer": [
+    "Python",
+    "Machine Learning",
+    "Deep Learning",
+    "TensorFlow",
+    "PyTorch",
+    "Scikit-learn",
+    "Docker",
+    "Kubernetes",
+    "Linux",
+    "Git",
+    "AWS",
+    "MLflow",
+    "Airflow",
+    "Feast"
+],
+    "Software Engineer": [
+        "Python", "Java", "C", "C++",
+        "SQL",
+        "Git", "GitHub", "Linux"
     ],
 
-    "ML Engineer":[
-        "Python","Machine Learning","Deep Learning",
-        "TensorFlow","PyTorch","Docker",
-        "Linux","Git","AWS","Scikit-learn"
+    "Full Stack Developer": [
+        "HTML", "CSS", "JavaScript",
+        "React", "NodeJS",
+        "MongoDB", "MySQL",
+        "Git", "GitHub", "Bootstrap"
     ],
 
-    "Software Engineer":[
-        "Python","Java","C","C++",
-        "SQL","Git","GitHub","Linux"
+    "Frontend Developer": [
+        "HTML", "CSS", "JavaScript",
+        "React", "Bootstrap", "Git"
     ],
 
-    "Full Stack Developer":[
-        "HTML","CSS","JavaScript","React",
-        "NodeJS","MongoDB","MySQL",
-        "Git","GitHub","Bootstrap"
+    "Backend Developer": [
+        "Python", "SQL",
+        "NodeJS",
+        "Flask", "Django", "FastAPI",
+        "MongoDB", "MySQL",
+        "Git"
     ],
 
-    "Frontend Developer":[
-        "HTML","CSS","JavaScript",
-        "React","Bootstrap","Git"
+    "Web Developer": [
+        "HTML", "CSS", "JavaScript",
+        "PHP", "Bootstrap",
+        "MySQL", "Git"
     ],
 
-    "Backend Developer":[
-        "Python","SQL","NodeJS","Flask",
-        "Django","FastAPI","MongoDB",
-        "MySQL","Git"
+    "Cloud Engineer": [
+        "Python",
+        "AWS", "Azure",
+        "Docker", "Kubernetes",
+        "Linux", "Git"
     ],
 
-    "Web Developer":[
-        "HTML","CSS","JavaScript",
-        "PHP","Bootstrap","MySQL","Git"
-    ],
-
-    "Cloud Engineer":[
-        "Python","AWS","Azure",
-        "Docker","Kubernetes",
-        "Linux","Git"
-    ],
-
-    "Data Analyst":[
-        "SQL","Excel","Power BI",
-        "Python","Pandas","Data Analysis",
-        "Data Visualization","Matplotlib"
+    "Data Analyst": [
+        "SQL", "Excel",
+        "Power BI",
+        "Python", "Pandas",
+        "Data Analysis",
+        "Data Visualization",
+        "Matplotlib"
     ]
-
 }
+
+
+# ----------------------------
+# Generate Dataset
+# ----------------------------
 
 rows = []
 
-# ----------------------------
-# Generate 500 rows
-# ----------------------------
-
-for i in range(500):
+for i in range(1000):
 
     career = random.choice(list(career_profiles.keys()))
 
-    required = career_profiles[career]
+    required = set(career_profiles[career])
 
     row = {}
 
     for skill in skills:
 
         if skill in required:
-            row[skill] = random.choices([1,0], weights=[90,10])[0]
+
+            # Required skills have high probability
+            row[skill] = random.choices(
+                [1, 0],
+                weights=[95, 5]
+            )[0]
+
         else:
-            row[skill] = random.choices([1,0], weights=[15,85])[0]
+
+            # Non-required skills have very low probability
+            row[skill] = random.choices(
+                [1, 0],
+                weights=[3, 97]
+            )[0]
 
     row["Career"] = career
 
     rows.append(row)
 
+
+# ----------------------------
+# Create DataFrame
+# ----------------------------
+
 df = pd.DataFrame(rows)
 
-df.to_csv("datasets/career_dataset.csv", index=False)
+
+# ----------------------------
+# Save Dataset
+# ----------------------------
+
+df.to_csv(
+    "datasets/career_dataset.csv",
+    index=False
+)
+
 
 print("Dataset Created Successfully!")
-print(df.head())
+
+print("Number of rows:", len(df))
+
+print("Number of features:", len(skills))
+
 print("Shape:", df.shape)
 
+print("\nCareer Distribution:")
+
+print(df["Career"].value_counts())
+
+print("\nFirst 5 rows:")
+
+print(df.head())

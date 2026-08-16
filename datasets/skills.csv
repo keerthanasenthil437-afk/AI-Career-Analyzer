@@ -9,33 +9,57 @@ CSS
 JavaScript
 React
 NodeJS
+PHP
+Bootstrap
 Machine Learning
 Deep Learning
+Artificial Intelligence
 TensorFlow
 PyTorch
+Scikit-learn
+Pandas
+NumPy
+Matplotlib
+Seaborn
 Git
+GitHub
 Docker
+Kubernetes
 AWS
+Azure
+Linux
 Flask
 Django
+FastAPI
+MongoDB
+MySQL
 Power BI
-LangChain
-LangGraph
+Excel
+Data Analysis
+Data Visualization
+Computer Vision
+NLP
+LLM
 GPT
 Claude
 Gemini
 Llama
 Mistral
-CrewAI
-Pydantic AI
-Pinecone
-Weaviate
-Chroma
-pgvector
+LangChain
+LangGraph
 RAG
+Pinecone
+Chroma
+Weaviate
+CrewAI
 Prompt Engineering
-LLM
-REST API
-OpenAI
-Azure OpenAI
-Vertex AI
+Hugging Face
+vLLM
+MLflow
+Airflow
+Weights & Biases
+Feast
+XGBoost
+Bayesian
+A/B Testing
+Causal Inference

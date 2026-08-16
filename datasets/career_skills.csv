@@ -1,7 +1,7 @@
 Career,Skills
-AI Engineer,"Python,Machine Learning,Deep Learning,Artificial Intelligence,TensorFlow,PyTorch,Scikit-learn,SQL,Git,Docker"
-Data Scientist,"Python,SQL,Machine Learning,Pandas,NumPy,Scikit-learn,Matplotlib,Seaborn,Power BI,Excel"
-ML Engineer,"Python,Machine Learning,Scikit-learn,TensorFlow,PyTorch,SQL,Git,Docker"
+AI Engineer,"Python,Machine Learning,Deep Learning,Artificial Intelligence,TensorFlow,PyTorch,Scikit-learn,SQL,Git,Docker,LLM,GPT,Claude,Gemini,Llama,Mistral,LangChain,LangGraph,RAG,Pinecone,Chroma,Weaviate,CrewAI,Prompt Engineering,Computer Vision,NLP"
+Data Scientist,"Python,SQL,Machine Learning,Pandas,NumPy,Scikit-learn,Matplotlib,Seaborn,Data Analysis,Data Visualization,Excel,Power BI,XGBoost,A/B Testing,Bayesian,Causal Inference"
+ML Engineer,"Python,Machine Learning,Deep Learning,TensorFlow,PyTorch,Scikit-learn,Docker,Kubernetes,Linux,Git,AWS,MLflow,Airflow,Feast"
 Software Engineer,"Python,Java,C,C++,SQL,Git,GitHub,Linux"
 Full Stack Developer,"HTML,CSS,JavaScript,React,NodeJS,MongoDB,MySQL,Git,GitHub,Bootstrap"
 Frontend Developer,"HTML,CSS,JavaScript,React,Bootstrap,Git"
