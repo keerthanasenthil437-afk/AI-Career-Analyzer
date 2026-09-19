@@ -144,15 +144,11 @@ career_weights = {
     }
 }
 
-
 def predict_career(extracted_skills):
 
     extracted_skills = set(extracted_skills)
 
-    # -----------------------------------------
-    # Calculate career scores
-    # -----------------------------------------
-
+    # Calculate score for every career
     scores = {}
 
     for career, weights in career_weights.items():
@@ -166,28 +162,38 @@ def predict_career(extracted_skills):
 
         scores[career] = score
 
-    # -----------------------------------------
-    # Find highest scoring career
-    # -----------------------------------------
-
-    prediction = max(scores, key=scores.get)
-
-    max_score = scores[prediction]
-
-    # -----------------------------------------
-    # Calculate confidence
-    # -----------------------------------------
-
-    total_possible = sum(
-        career_weights[prediction].values()
+    # Sort careers from highest score to lowest
+    ranked_careers = sorted(
+        scores.items(),
+        key=lambda x: x[1],
+        reverse=True
     )
 
-    if total_possible > 0:
-        confidence = (max_score / total_possible) * 100
-    else:
-        confidence = 0
+    # Get top 3 careers
+    top_careers = ranked_careers[:3]
 
-    # Limit confidence to 100
-    confidence = min(confidence, 100)
+    # Calculate confidence for each career
+    recommendations = []
 
-    return prediction, confidence
+    for career, score in top_careers:
+
+        total_possible = sum(
+            career_weights[career].values()
+        )
+
+        if total_possible > 0:
+            confidence = (score / total_possible) * 100
+        else:
+            confidence = 0
+
+        confidence = min(confidence, 100)
+
+        recommendations.append(
+            (career, confidence)
+        )
+
+    # Best career
+    prediction = recommendations[0][0]
+    confidence = recommendations[0][1]
+
+    return prediction, confidence, recommendations

@@ -1,0 +1,418 @@
+/* =========================================
+   AI CAREER ANALYZER - PROFESSIONAL THEME
+   ========================================= */
+
+/* Main application background */
+.stApp {
+    background-color: #f7f9fc;
+}
+
+/* Main content area */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+/* Main title */
+h1 {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -1px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 1.7rem !important;
+    font-weight: 750 !important;
+    margin-top: 2rem !important;
+}
+
+h3 {
+    font-weight: 700 !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #111827;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] p {
+    color: #4b5563;
+}
+
+/* Upload area */
+[data-testid="stFileUploader"] {
+    background-color: #ffffff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 1rem;
+    transition: all 0.2s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #6366f1;
+    background-color: #fafaff;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+/* Metric label */
+[data-testid="stMetricLabel"] {
+    font-weight: 600;
+}
+
+/* Metric value */
+[data-testid="stMetricValue"] {
+    font-weight: 800;
+}
+
+/* Progress bars */
+div[data-testid="stProgress"] {
+    margin-top: 0.5rem;
+}
+
+/* Text areas */
+textarea {
+    border-radius: 12px !important;
+}
+
+/* Alerts / messages */
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.55rem 1.2rem;
+    border: 1px solid #d1d5db;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 2rem 0;
+}
+
+/* Dataframes / tables */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Caption */
+.stCaption {
+    color: #6b7280;
+}
+
+/* Hide Streamlit default menu */
+#MainMenu {
+    visibility: hidden;
+}
+
+/* Hide footer */
+footer {
+    visibility: hidden;
+}
+
+/* Smooth page appearance */
+* {
+    box-sizing: border-box;
+}
+/* =========================================
+   CareerLens AI - Professional Hero
+   ========================================= */
+
+.hero-section {
+    text-align: center;
+    padding: 35px 20px 30px 20px;
+    margin-bottom: 25px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 20px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 5px 0 10px 0;
+    color: #1f2937;
+}
+
+.hero-subtitle {
+    font-size: 21px;
+    font-weight: 600;
+    color: #4f46e5;
+    margin-bottom: 12px;
+}
+
+.hero-description {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #6b7280;
+}
+
+
+/* =========================================
+   Feature Cards
+   ========================================= */
+
+.feature-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 22px 18px;
+    min-height: 170px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.feature-card h3 {
+    margin: 5px 0 8px 0;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.feature-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+}
+/* =========================================
+   TOP NAVIGATION BAR
+   ========================================= */
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 12px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.nav-brand {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #4f46e5;
+}
+
+.nav-active {
+    color: #4f46e5;
+}
+/* =========================================
+   TOP NAVIGATION BAR
+   ========================================= */
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 14px 24px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+
+    position: sticky;
+    top: 10px;
+    z-index: 999;
+}
+
+/* Brand */
+
+.nav-brand {
+    font-size: 21px;
+    font-weight: 800;
+    color: #1f2937;
+    white-space: nowrap;
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    color: #4b5563 !important;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 9px 14px;
+    border-radius: 9px;
+
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background: #eef2ff;
+    color: #4f46e5 !important;
+}
+
+/* Active Home */
+
+.nav-active {
+    background: #eef2ff;
+    color: #4f46e5 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .top-nav {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+/* =========================================
+   PROFESSIONAL NAVIGATION BAR
+   ========================================= */
+
+.top-nav {
+    width: 100%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 14px 24px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+.nav-brand {
+    font-size: 21px;
+    font-weight: 800;
+    color: #1f2937;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #4f46e5;
+    background: #eef2ff;
+}
+
+.nav-active {
+    color: #4f46e5;
+    background: #eef2ff;
+}
+/* =================================
+   FIXED TOP NAVIGATION
+   ================================= */
+
+.top-nav {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+
+    background: #ffffff;
+    padding: 15px 35px;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+}
